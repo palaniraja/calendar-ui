@@ -211,7 +211,7 @@ static const unsigned int TOP_BACKGROUND_HEIGHT          = 35;
 - (UIImageView *)topBackground {
 	if (!_topBackground) {
 		_topBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:TOP_BACKGROUND_IMAGE]];
-		_leftArrow.frame = CGRectMake(CGRectGetMinX(self.bounds),
+		_topBackground.frame = CGRectMake(CGRectGetMinX(self.bounds),
 									  CGRectGetMinY(self.bounds),
 									  CGRectGetWidth(self.bounds), TOP_BACKGROUND_HEIGHT);
 	}
